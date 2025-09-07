@@ -8,32 +8,32 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
     <EditText
+            android:id="@+id/eTNum1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="number"
             android:ems="10"
             android:textSize="20dp"
             android:hint="Ingresa un número"
-            android:id="@+id/eTNumb"
             tools:layout_editor_absoluteY="54dp"
             tools:ignore="MissingConstraints" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="28dp"/>
     <EditText
+            android:id="@+id/eTNum2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="number"
             android:ems="10"
             android:textSize="20dp"
             android:hint="Ingresa un número"
-            android:id="@+id/eTNum2"
-            tools:ignore="MissingConstraints" app:layout_constraintTop_toBottomOf="@+id/eTNumb"
+            tools:ignore="MissingConstraints" app:layout_constraintTop_toBottomOf="@+id/eTNum1"
             android:layout_marginTop="14dp" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="28dp"/>
 
     <Button
+            android:id="@+id/btSum"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/btSum"
             android:text="Sumar"
             tools:ignore="MissingConstraints"
             app:layout_constraintTop_toBottomOf="@+id/eTNum2"
@@ -42,6 +42,7 @@
             android:layout_marginStart="28dp"/>
 
     <TextView
+            android:id="@+id/tvResult"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Resultado: "
